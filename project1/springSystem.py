@@ -101,8 +101,3 @@ try:
     print("L2 condition number of K: " + str(condN))
 except InverseException:
     print("Error: stiffness matrix K is not invertible. Try defining one or two fixed ends instead.")
-
-#To-do:
-#Improve documentation
-#Containerize and push to Git
-#Readme and writeup
