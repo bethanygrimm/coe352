@@ -94,6 +94,10 @@ try:
 
     u = np.matmul(KI, f)
     print("Displacement vector of masses: " + str(u))
+    e = np.matmul(A, u)
+    print("Elongation vector of springs: " + str(e))
+    w = np.matmul(C, e)
+    print("Internal stresses in springs: " + str(w))
     S = SVD[1]
     sVals = np.diagonal(S)
     eVals = sVals ** 2
