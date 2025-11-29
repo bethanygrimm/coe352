@@ -21,5 +21,5 @@ Enter number of timesteps (positive integer):
 551
 Forward or backward Euler ("f"/"b"): 
 f
-<img src="https://github.com/bethanygrimm/coe352/blob/5acb34de3e6c386f68e708c66f19495e82af70c4/project2/HeatEquationSolution.png" alt="Computed Solution and Analytic Solution Plot">
+<img src="https://github.com/bethanygrimm/coe352/blob/b0490cd3e32d1151b6753a90f906c644aa6c7da7/project2/HeatEquationSolution.png" alt="Computed Solution and Analytic Solution Plot">
 </pre>
