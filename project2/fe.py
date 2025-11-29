@@ -136,16 +136,18 @@ else:
 
 #Plot result along with analytical solution
 
-soln = analyticalSolution(xRange,t)
 uResult = uNext.reshape(Nn)
 if forward:
     title = "Heat Transfer Finite Element Solution with Foward Euler"
 else:
-    title = "Heat Transfer Finite Element Solution with Backwards Euler"
-plt.plot(xRange,soln,label="Analytical Solution")
+    title = "Heat Transfer Finite Element Solution with Backward Euler"
+xRangeA = np.linspace(x0,xf,100)
+soln = analyticalSolution(xRangeA,t)
+plt.plot(xRangeA,soln,label="Analytical Solution")
 plt.plot(xRange,uResult,label="Finite Element Result")
 plt.xlabel("Space")
 plt.ylabel("Time")
+plt.annotate("Spatial nodes: " + str(Nn) + "\nTimesteps: " + str(Nt), xy=(0,0.9*max(uResult)))
 plt.title(title)
 plt.legend()
 plt.show()
